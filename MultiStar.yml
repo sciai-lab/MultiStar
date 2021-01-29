@@ -1,0 +1,24 @@
+name: MultiStar
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - numpy=1.19
+  - matplotlib=3.2.2
+  - h5py=2.10.0
+  - pillow=7.2.0
+  - scikit-image=0.17.2
+  - scipy=1.5.0
+  - cudatoolkit=10.2.89
+  - torchaudio=0.6.0
+  - torchvision=0.7.0
+  - pytorch=1.6
+  - tensorflow=2.2.0
+  - pip=20.2.1
+  - pip:
+    - elasticdeform==0.4.6
+    - stardist==0.6.0
+    - tqdm==4.56.0
+    - wget==3.2
+prefix: /home/username/miniconda3/envs/MultiStar
