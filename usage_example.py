@@ -109,9 +109,6 @@ optimizer = torch.optim.Adam(mtl.parameters(), lr=lr)
 exp_results_path = os.path.join('experiments/results', exp_name)
 os.makedirs(exp_results_path, exist_ok=False)
 
-# save all relevant scripts with hyperparameters in experiment results directory
-# copytree('experiments/dev', os.path.join(exp_results_path, 'scripts'))
-
 trainer = trainloop.Trainer(
     exp_path=exp_results_path,
     model=model,
